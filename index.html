@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <title>Document222</title>
+</head>
+<body>
+  <style>
+      html, body, .slider-container{
+          height: 100%;
+      }
+      .overlay{
+          width: 100%;
+          height: 100%;
+          background: url(http://i.imgur.com/5xZxGCa.jpg);
+          background-position: center;
+          background-size: cover;
+          
+      } 
+       
+        
+      
+      .overlay.twentytwenty-after{
+          z-index: 21;
+      }
+      
+      .twentytwenty-overlay:hover{
+          background-color: rgba(0, 0, 0, 0)
+      }
+  </style>
+   <div class="slider-container">
+       
+       <div class="img overlay"></div>
+   </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="app.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+    $(window).load(function() {
+      
+      $(".slider-container").twentytwenty();
+    });
+    </script>
+</body>
+</html>
